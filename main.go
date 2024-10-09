@@ -18,5 +18,5 @@ func main() {
 	mux := controller.Register()
 
 	fmt.Println("Serving...")
-	log.Fatal(http.ListenAndServe("localhost:3000", mux))
+	log.Fatal(http.ListenAndServe(":3000", mux))
 }
